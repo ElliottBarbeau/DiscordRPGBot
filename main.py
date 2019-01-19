@@ -2,19 +2,12 @@ import discord
 from Player import Player
 
 client = discord.Client()
-classes = ["mage", "knight", "rogue", "archer"]
 users = []
 players = []
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-    '''
-    if message.content.startswith('!hello'):
-        await message.channel.send("Hello".format(message))
-    elif message.content.startswith("im gonna say the n word"):
-        await message.channel.send("\n ```\nkys\n```".format(message))
-    '''
 
     #Real bot code here
     if message.content.startswith('!'):
